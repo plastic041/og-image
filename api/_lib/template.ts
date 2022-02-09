@@ -1,5 +1,4 @@
 import { ParsedRequest } from "./types";
-import { decompress } from "shrink-string";
 import { getGrid } from "./grid";
 
 function getCss() {
@@ -55,7 +54,6 @@ function getCss() {
 
 export async function getHtml(parsedReq: ParsedRequest) {
   const { text, size } = parsedReq;
-  const decoded = await decompress(text);
   const html = `
 <!DOCTYPE html>
 <html>
@@ -66,7 +64,7 @@ export async function getHtml(parsedReq: ParsedRequest) {
     ${getCss()}
   </style>
   <body>
-    ${getGrid(decoded, size)}
+    ${getGrid(text, size)}
   </body>
 </html>`;
 

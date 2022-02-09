@@ -114,8 +114,8 @@ const App = (_: any, state: AppState, setState: SetState) => {
     setState({ ...newState, loading: true });
   };
   const {
-    text = "H4sIAAAAAAAAE+2Piw2AMAhEV6r4H+c8w/4jFCttiivYS0h4FyBcmmQGqSwClnXbjd1QHCcu0I2nbmcDLRsmkm2lSaOhccLvU16UZkuP3vdoFPHLcR7xXn1WKqaRf+T/cf4MS5Me+gAEAAA=",
-    size = "32",
+    text = "0123accfccccccaa4567acccfcccccfa89abaccccfcccfcccdabacccccfcfcccaaaaaccccccfccccccccccccccfcfccccccccccccfcccfccccccccccfcccccfc2cccccc2cccccccfc2cccc2ccccccccccc2cc2ccccccccccccc22cccccccccccccc22ccccccccccccc2cc2cccccccccca2cccc2ccccccccaaaccccc2ccccccaa",
+    size = "16",
     showToast = false,
     messageToast = "",
     loading = true,
